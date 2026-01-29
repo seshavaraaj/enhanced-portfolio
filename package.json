@@ -1,12 +1,14 @@
 {
   "name": "enhanced-portfolio",
+  "homepage": "https://seshavaraaj.github.io/enhanced-portfolio/",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "dependencies": {
+    "gh-pages": "^6.3.0",
+    "lucide-react": "^0.563.0",
     "react": "^19.2.4",
-    "react-dom": "^19.2.4",
-    "lucide-react": "^0.563.0"
+    "react-dom": "^19.2.4"
   },
   "devDependencies": {
     "@types/react": "^19.2.0",
@@ -18,7 +20,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "browserslist": {
     "production": [

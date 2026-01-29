@@ -7,6 +7,7 @@ export default defineConfig({
     host: '0.0.0.0',
   },
   plugins: [react()],
+  base: "/enhanced-portfolio",
   publicDir: 'public',
   build: {
     // Optimize build output
