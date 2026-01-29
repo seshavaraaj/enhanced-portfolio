@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shadows Code Twice | Game Programmer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              sekiro: {
+                dark: '#0c0a09', // stone-950
+                paper: '#e7e5e4', // stone-200
+                red: '#991b1b', // red-800
+                gold: '#d97706', // amber-600
+                fog: '#292524', // stone-800
+              }
+            },
+            fontFamily: {
+              serif: ['Cinzel', 'serif'],
+              sans: ['Spectral', 'sans-serif'],
+              brush: ['"Yuji Boku"', 'serif'],
+            },
+            animation: {
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'float': 'float 6s ease-in-out infinite',
+              'fadeIn': 'fadeIn 0.5s ease-out forwards',
+              'scaleIn': 'scaleIn 0.3s ease-out forwards',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              },
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              scaleIn: {
+                '0%': { opacity: '0', transform: 'scale(0.95)' },
+                '100%': { opacity: '1', transform: 'scale(1)' },
+              }
+            }
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Spectral:wght@300;400;600&family=Yuji+Boku&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <style>
+      body {
+        background-color: #0c0a09;
+        color: #e7e5e4;
+        font-family: 'Spectral', sans-serif;
+        overflow-x: hidden;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Cinzel', serif;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1c1917; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #44403c; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #991b1b; 
+      }
+    </style>
+    <script type="module" crossorigin src="/enhanced-portfolio/assets/index-CGzi5i0P.js"></script>
+    <link rel="modulepreload" crossorigin href="/enhanced-portfolio/assets/icons-C4pDV5Wl.js">
+    <link rel="modulepreload" crossorigin href="/enhanced-portfolio/assets/vendor-CQ1BN7_o.js">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
